@@ -1,0 +1,366 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400&display=swap');
+
+@font-face {
+  font-family: 'Geist:Medium';
+  src: url('https://static.figma.com/font/Geist_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Geist:Regular';
+  src: url('https://static.figma.com/font/Geist_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Geist:Bold';
+  src: url('https://static.figma.com/font/Geist_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Geist:SemiBold';
+  src: url('https://static.figma.com/font/Geist_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Fragment Mono:Regular';
+  src: url('https://static.figma.com/font/FragmentMono-Regular_1') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans:Bold';
+  src: url('https://static.figma.com/font/OpenSans_wdth_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans:SemiBold';
+  src: url('https://static.figma.com/font/OpenSans_wdth_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open Sans:Regular';
+  src: url('https://static.figma.com/font/OpenSans_wdth_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Geist:ExtraBold';
+  src: url('https://static.figma.com/font/Geist_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Roboto:Bold';
+  src: url('https://static.figma.com/font/Roboto_wdth_wght__3') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Open Sans:Semibold could not be resolved for this Make file (not_found).
+   Falling back to Open Sans:SemiBold (600 weight). */
+@font-face {
+  font-family: 'Open Sans:Semibold';
+  src: url('https://static.figma.com/font/OpenSans_wdth_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Public Sans:Regular';
+  src: url('https://fonts.gstatic.com/s/publicsans/v15/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpi5ww0pX189fg.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Ensure height chain propagates from html down to the app root */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Desktop home layout ─────────────────────────────────────────── */
+[data-name="home-dashboard"] {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+[data-name="home-dashboard"] [data-name="sidebar"] {
+  height: 100%;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+[data-name="main-container"] {
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* ── Mobile home layouts ─────────────────────────────────────────── */
+[data-name="home-dashboard-mobile-asymmetric"],
+[data-name="home-dashboard-mobile-asymmetric-expand menu"] {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  /* leave room at bottom for the fixed nav bar */
+  padding-bottom: 72px;
+}
+
+/* Fixed bottom navigation bar */
+[data-name="BottomNav"] {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* Expand-menu sidebar is absolutely positioned — prevent general rules interfering */
+[data-name="home-dashboard-mobile-asymmetric-expand menu"] [data-name="sidebar"] {
+  height: 1308px;
+  position: absolute;
+  overflow-y: auto;
+  flex-shrink: initial;
+}
+
+/* Case study page layout — sidebar fixed, main scrolls, header sticky */
+[data-name="case-study-Revamp Landing Page"] {
+  height: 100%;
+}
+
+[data-name="case-study-Revamp Landing Page"] [data-name="sidebar"] {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  overflow-y: auto;
+}
+
+[data-name="case-study-Revamp Landing Page"] [data-name="main-container"] {
+  overflow-y: auto;
+  height: 100vh;
+  min-height: 0;
+}
+
+[data-name="case-study-Revamp Landing Page"] [data-name="top-header-bar"] {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* ── Lampu case study layout ─────────────────────────────────────── */
+[data-name="case-study-Lampu"] {
+  height: 100%;
+  display: flex;
+}
+
+[data-name="case-study-Lampu"] [data-name="sidebar"] {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+[data-name="case-study-Lampu"] [data-name="main-container"] {
+  overflow-y: auto;
+  height: 100vh;
+  min-height: 0;
+  flex: 1;
+}
+
+[data-name="case-study-Lampu"] [data-name="top-header-bar"] {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+[data-name="case-study-Lampu"] [data-name="top-header-bar"] [data-name="Frame"] {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+[data-name="case-study-Lampu"] [data-name="top-header-bar"] [data-name="Frame"]:hover {
+  opacity: 0.65;
+}
+
+[data-name="case-study-Lampu"] [data-name="Nav Link"] {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+[data-name="case-study-Lampu"] [data-name="Nav Link"]:hover {
+  background-color: #f1f3f5;
+}
+
+/* Breadcrumb back area in top header — make it feel clickable */
+[data-name="case-study-Revamp Landing Page"] [data-name="top-header-bar"] [data-name="Frame"] {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+[data-name="case-study-Revamp Landing Page"] [data-name="top-header-bar"] [data-name="Frame"]:hover {
+  opacity: 0.65;
+}
+
+[data-name="case-study-Revamp Landing Page"] [data-name="Nav Link"] {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+[data-name="case-study-Revamp Landing Page"] [data-name="Nav Link"]:hover {
+  background-color: #f1f3f5;
+}
+
+/* ── Octobits case study layout ──────────────────────────────────── */
+[data-name="octobits-case-study"] {
+  height: 100%;
+  display: flex;
+}
+
+[data-name="octobits-case-study"] [data-name="sidebar"] {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+[data-name="octobits-case-study"] [data-name="main-container"] {
+  overflow-y: auto;
+  height: 100vh;
+  min-height: 0;
+  flex: 1;
+}
+
+[data-name="octobits-case-study"] [data-name="top-header-bar"] {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+[data-name="octobits-case-study"] [data-name="top-header-bar"] [data-name="Frame"] {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+[data-name="octobits-case-study"] [data-name="top-header-bar"] [data-name="Frame"]:hover {
+  opacity: 0.65;
+}
+
+[data-name="octobits-case-study"] [data-name="Nav Link"] {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+[data-name="octobits-case-study"] [data-name="Nav Link"]:hover {
+  background-color: #f1f3f5;
+}
+
+/* Hover effects for cards, nav links, and buttons */
+[data-name="project card"],
+[data-name="project-card-bobocabin-self-check-in-kiosk"],
+[data-name="AsymmetricCard2"] {
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+  cursor: pointer;
+}
+
+[data-name="project card"]:hover,
+[data-name="project-card-bobocabin-self-check-in-kiosk"]:hover,
+[data-name="AsymmetricCard2"]:hover {
+  box-shadow: 0 8px 24px rgba(26, 29, 32, 0.10);
+  transform: translateY(-2px);
+}
+
+/* Hide brand logo + name in mobile header */
+[data-name="home-dashboard-mobile-asymmetric"] [data-name="Header"] [data-name="Brand"],
+[data-name="home-dashboard-mobile-asymmetric-expand menu"] [data-name="Header"] [data-name="Brand"] {
+  display: none;
+}
+
+/* Push Actions to the right when Brand is hidden */
+[data-name="home-dashboard-mobile-asymmetric"] [data-name="Header"],
+[data-name="home-dashboard-mobile-asymmetric-expand menu"] [data-name="Header"] {
+  justify-content: flex-end;
+}
+
+/* Mobile hamburger cursor */
+[data-name="Actions"] [data-name="icon"] {
+  cursor: pointer;
+}
+
+/* Expand menu back icon */
+[data-name="home-dashboard-mobile-asymmetric-expand menu"] [data-name="sidebar"] [data-name="icon"] {
+  cursor: pointer;
+}
+
+[data-name="Nav Link"] {
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+}
+
+[data-name="Nav Link"]:hover {
+  background-color: #ebf8ff;
+}
+
+[data-name="Nav Link"]:hover p {
+  color: #2b6cb0;
+}
+
+[data-name="Nav Link"]:hover svg path,
+[data-name="Nav Link"]:hover svg circle {
+  stroke: #2b6cb0;
+}
+
+[data-name="Status Badge"] {
+  transition: opacity 0.15s ease;
+  cursor: pointer;
+}
+
+[data-name="Status Badge"]:hover {
+  opacity: 0.8;
+}
+
+/* Resume / Email / LinkedIn sidebar links */
+[data-name="NavResume"] {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+[data-name="NavResume"]:hover {
+  opacity: 0.7;
+}
+
+/* Mockup card hover in sidebar */
+[data-name="Home"] {
+  transition: box-shadow 0.18s ease;
+  cursor: pointer;
+}
+
+[data-name="Home"]:hover {
+  box-shadow: 0 12px 32px rgba(26, 29, 32, 0.15);
+}

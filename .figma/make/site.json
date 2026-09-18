@@ -1,0 +1,14 @@
+{
+  "title": "rizkyrong.design",
+  "description": "Showcase personal projects and skills with a responsive portfolio dashboard featuring interactive hover effects for an engaging user experience.",
+  "icons": {
+    "icon": "/.figma/make/favicon.png"
+  },
+  "openGraph": {
+    "image": "/.figma/make/social-image.png"
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": true
+  }
+}
