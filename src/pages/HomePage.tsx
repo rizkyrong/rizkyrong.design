@@ -49,6 +49,11 @@ export function HomePage() {
       const navLink = target.closest('[data-name="Nav Link"], [data-name="NavResume"], [data-name="NavCreation"]') as HTMLElement | null;
       if (navLink) {
         const text = navLink.querySelector("p")?.textContent?.trim() ?? "";
+        if (text === "Home") {
+          e.preventDefault();
+          navigate("/");
+          return;
+        }
         if (text === "Creation") {
           e.preventDefault();
           navigate("/creation");

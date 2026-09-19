@@ -1,4 +1,6 @@
 import svgPaths from "./svg-x554z7zf9f";
+import { useNavigate } from "react-router";
+import type { MouseEvent as ReactMouseEvent } from "react";
 import imgBrilliantFacetedCrystalGemstone1 from "./323978cca3f94f43fbb268bf32ea431cdfcaf04c.webp";
 import imgSection from "./5531a77bb9646ddbb7c2ae79e4c20d68dbb8117c.webp";
 import imgSection1 from "./652471cdb613e792a946a14fe6559a7335520d82.webp";
@@ -312,8 +314,34 @@ function Frame4() {
 }
 
 export function Sidebar({ className = "" }: { className?: string }) {
+  const navigate = useNavigate();
+
+  function handleSidebarClick(event: ReactMouseEvent<HTMLDivElement>) {
+    const target = event.target as HTMLElement;
+    const navLink = target.closest('[data-name="Nav Link"], [data-name="NavResume"]');
+    if (!navLink) return;
+
+    const label = navLink.querySelector("p")?.textContent?.trim();
+    if (label === "Home") {
+      event.preventDefault();
+      navigate("/");
+    } else if (label === "Creation") {
+      event.preventDefault();
+      navigate("/creation");
+    } else if (label === "Resume") {
+      event.preventDefault();
+      window.open("https://drive.google.com/file/d/1aGfNx-FKfO6GQdFL_iyZla9ROm9oAT51/view", "_blank", "noopener,noreferrer");
+    } else if (label === "Email") {
+      event.preventDefault();
+      window.location.href = "mailto:blrizkyramadhan@yahoo.co.id";
+    } else if (label === "LinkedIn") {
+      event.preventDefault();
+      window.open("https://www.linkedin.com/in/rizkyrong/", "_blank", "noopener,noreferrer");
+    }
+  }
+
   return (
-    <div className={`bg-white content-stretch flex flex-col items-start justify-between px-[24px] py-[32px] relative self-stretch shrink-0 w-[260px] ${className}`} data-name="sidebar">
+    <div className={`bg-white content-stretch flex flex-col items-start justify-between px-[24px] py-[32px] relative self-stretch shrink-0 w-[260px] ${className}`} data-name="sidebar" onClick={handleSidebarClick}>
       <div aria-hidden className="absolute border-[#e9edf0] border-r border-solid inset-0 pointer-events-none" />
       <Frame />
       <Frame4 />
