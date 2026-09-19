@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router";
 
 const galleryItems = [
-  { src: "/assets/design-exploration-1.jpg", alt: "Musketeer digital agency website exploration", className: "bg-[#edf0f4]" },
-  { src: "/assets/design-exploration-2.jpg", alt: "You Are Stellar job marketplace exploration", className: "bg-[#e9f1ff]" },
-  { src: "/assets/design-exploration-4.jpg", alt: "Prasasti responsive website exploration", className: "bg-[#edf0f4]" },
-  { src: "/assets/design-exploration-3.jpg", alt: "Mobile learning platform exploration", className: "bg-[#eef0f1]" },
-  { src: "/assets/design-exploration-5.jpg", alt: "Better Living Solutions website exploration", className: "bg-[#fff8f2]" },
-  { src: "/assets/design-exploration-6.jpg", alt: "Arsitag property marketplace exploration", className: "bg-[#edf0f4]" },
+  { src: "/assets/design-exploration-1.jpg", alt: "Musketeer digital agency website exploration" },
+  { src: "/assets/design-exploration-2.jpg", alt: "You Are Stellar job marketplace exploration" },
+  { src: "/assets/design-exploration-4.jpg", alt: "Prasasti responsive website exploration" },
+  { src: "/assets/design-exploration-3.jpg", alt: "Mobile learning platform exploration" },
+  { src: "/assets/design-exploration-5.jpg", alt: "Better Living Solutions website exploration" },
+  { src: "/assets/design-exploration-6.jpg", alt: "Arsitag property marketplace exploration" },
 ];
 
 function Icon({ name }: { name: "home" | "about" | "creation" | "resume" | "email" | "linkedin" }) {
@@ -76,8 +76,8 @@ export function CreationPage() {
           </div>
           <div className="creation-page-gallery grid grid-cols-2 gap-6">
             {galleryItems.map((item) => (
-              <button className={`group relative aspect-[1.45] overflow-hidden rounded-[16px] text-left ${item.className}`} key={item.src} onClick={() => navigate("/")} type="button">
-                <img alt={item.alt} className="h-full w-full object-contain transition duration-300 group-hover:scale-[1.03]" src={item.src} />
+              <button className="group relative aspect-[981/768] overflow-hidden rounded-[16px] bg-transparent text-left" key={item.src} onClick={() => navigate("/")} type="button">
+                <img alt={item.alt} className="block h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src={item.src} />
               </button>
             ))}
           </div>
