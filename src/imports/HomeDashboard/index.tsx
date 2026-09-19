@@ -73,7 +73,7 @@ function Frame1() {
 
 function Frame3() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="Frame">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="PrimaryNav">
       <div className="bg-[#ebf8ff] relative rounded-[8px] shrink-0 w-full" data-name="Nav Link">
         <div className="flex flex-row items-center size-full">
           <div className="content-stretch flex gap-[10px] items-center px-[12px] py-[8px] relative size-full">
@@ -225,7 +225,7 @@ function Frame() {
 
 function Frame6() {
   return (
-    <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-name="Frame">
+    <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-name="ConnectNav">
       <div className="relative rounded-[8px] shrink-0 w-full" data-name="Nav Link">
         <div className="flex flex-row items-center size-full">
           <div className="content-stretch flex gap-[10px] items-center px-[12px] py-[8px] relative size-full">
