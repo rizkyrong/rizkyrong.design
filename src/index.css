@@ -365,6 +365,26 @@ html, body {
   box-shadow: 0 12px 32px rgba(26, 29, 32, 0.15);
 }
 
+.creation-page-sidebar [data-name="Nav Link"]:first-child {
+  background: transparent;
+}
+
+.creation-page-sidebar [data-name="Nav Link"]:first-child p,
+.creation-page-sidebar [data-name="Nav Link"]:first-child path {
+  color: #1a1d20;
+  stroke: #1a1d20;
+}
+
+.creation-page-sidebar [data-name="Nav Link"]:nth-child(3) {
+  background: #ebf8ff;
+}
+
+.creation-page-sidebar [data-name="Nav Link"]:nth-child(3) p,
+.creation-page-sidebar [data-name="Nav Link"]:nth-child(3) path {
+  color: #2b6cb0;
+  stroke: #2b6cb0;
+}
+
 @media (max-width: 860px) {
   .creation-page-sidebar {
     display: none;

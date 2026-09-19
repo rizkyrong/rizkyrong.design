@@ -311,9 +311,9 @@ function Frame4() {
   );
 }
 
-function Sidebar() {
+export function Sidebar({ className = "" }: { className?: string }) {
   return (
-    <div className="bg-white content-stretch flex flex-col items-start justify-between px-[24px] py-[32px] relative self-stretch shrink-0 w-[260px]" data-name="sidebar">
+    <div className={`bg-white content-stretch flex flex-col items-start justify-between px-[24px] py-[32px] relative self-stretch shrink-0 w-[260px] ${className}`} data-name="sidebar">
       <div aria-hidden className="absolute border-[#e9edf0] border-r border-solid inset-0 pointer-events-none" />
       <Frame />
       <Frame4 />
@@ -321,7 +321,7 @@ function Sidebar() {
   );
 }
 
-function TopHeaderBar() {
+export function TopHeaderBar() {
   return (
     <div className="bg-white content-stretch flex items-center justify-between px-[80px] py-[24px] relative shrink-0 w-full" data-name="top-header-bar">
       <div aria-hidden className="absolute border-[#e9edf0] border-b border-solid inset-0 pointer-events-none" />
