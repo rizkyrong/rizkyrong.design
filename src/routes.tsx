@@ -4,11 +4,20 @@ import { CaseStudyRevampPage } from "./pages/CaseStudyRevampPage";
 import { CaseStudyLampuPage } from "./pages/CaseStudyLampuPage";
 import { CaseStudyLampuV2Page } from "./pages/CaseStudyLampuV2Page";
 import { CaseStudyOctobitsPage } from "./pages/CaseStudyOctobitsPage";
+import { CreationPage } from "./pages/CreationPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: HomePage,
+  },
+  {
+    path: "/creation",
+    Component: CreationPage,
+  },
+  {
+    path: "/creation-page",
+    Component: CreationPage,
   },
   {
     path: "/case-study/lampu-v2-revamp",

@@ -46,9 +46,14 @@ export function HomePage() {
       }
 
       // Resume / Email / LinkedIn nav links (desktop sidebar + mobile bottom nav)
-      const navLink = target.closest('[data-name="Nav Link"], [data-name="NavResume"]') as HTMLElement | null;
+      const navLink = target.closest('[data-name="Nav Link"], [data-name="NavResume"], [data-name="NavCreation"]') as HTMLElement | null;
       if (navLink) {
         const text = navLink.querySelector("p")?.textContent?.trim() ?? "";
+        if (text === "Creation") {
+          e.preventDefault();
+          navigate("/creation");
+          return;
+        }
         if (text === "Resume") {
           e.preventDefault();
           window.open(RESUME_URL, "_blank", "noopener,noreferrer");
