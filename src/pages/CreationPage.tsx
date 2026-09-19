@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router";
 
 const galleryItems = [
-  { src: "/assets/151fd.png", alt: "Dashboard exploration", className: "bg-[#edf0f4]" },
-  { src: "/assets/b99d7.webp", alt: "Product interface exploration", className: "bg-[#e9f1ff]" },
-  { src: "/assets/ca5a2.webp", alt: "Editorial web exploration", className: "bg-[#f5f0ed]" },
-  { src: "/assets/51646.webp", alt: "Mobile product exploration", className: "bg-[#eef0f1]" },
-  { src: "/assets/a9580.webp", alt: "Landing page exploration", className: "bg-[#fff8f2]" },
-  { src: "/assets/c5be1.webp", alt: "Digital experience exploration", className: "bg-[#f2f0eb]" },
+  { src: "/assets/design-exploration-1.jpg", alt: "Musketeer digital agency website exploration", className: "bg-[#edf0f4]" },
+  { src: "/assets/design-exploration-2.jpg", alt: "You Are Stellar job marketplace exploration", className: "bg-[#e9f1ff]" },
+  { src: "/assets/design-exploration-4.jpg", alt: "Prasasti responsive website exploration", className: "bg-[#edf0f4]" },
+  { src: "/assets/design-exploration-3.jpg", alt: "Mobile learning platform exploration", className: "bg-[#eef0f1]" },
+  { src: "/assets/design-exploration-5.jpg", alt: "Better Living Solutions website exploration", className: "bg-[#fff8f2]" },
+  { src: "/assets/design-exploration-6.jpg", alt: "Arsitag property marketplace exploration", className: "bg-[#edf0f4]" },
 ];
 
 function Icon({ name }: { name: "home" | "about" | "creation" | "resume" | "email" | "linkedin" }) {
