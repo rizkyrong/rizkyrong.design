@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router";
+import imgGemIcon from "@/imports/HomeDashboard/323978cca3f94f43fbb268bf32ea431cdfcaf04c.webp";
 
 const galleryItems = [
   { src: "/assets/design-exploration-1.jpg", alt: "Musketeer digital agency website exploration" },
@@ -31,17 +32,17 @@ function Sidebar() {
   ];
 
   return (
-    <aside className="creation-page-sidebar flex w-[274px] shrink-0 flex-col border-r border-[#e9edf0] bg-white px-6 py-8">
-      <button className="mb-12 flex items-center gap-3 text-left" onClick={() => navigate("/")} type="button">
-        <span className="grid h-8 w-8 rotate-45 place-items-center rounded-[5px] bg-gradient-to-br from-[#152d69] via-[#6c75b9] to-[#f3c57a] shadow-[0_3px_10px_rgba(37,57,108,0.2)]">
-          <span className="h-3 w-3 rounded-[2px] bg-white/80" />
+    <aside className="creation-page-sidebar flex w-[260px] shrink-0 flex-col justify-between border-r border-[#e9edf0] bg-white px-6 py-8">
+      <button className="flex items-center gap-1 text-left" onClick={() => navigate("/")} type="button">
+        <span className="h-[36px] w-[36px] shrink-0 overflow-hidden">
+          <img alt="" className="h-full w-full object-contain" src={imgGemIcon} />
         </span>
         <span>
           <span className="block font-['Geist:Medium',sans-serif] text-[14px] leading-[20px] text-[#1a1d20]">Rizky R.</span>
           <span className="block font-['Fragment_Mono:Regular',sans-serif] text-[10px] leading-[14px] text-[#6c757d]">My Portfolio</span>
         </span>
       </button>
-      <nav className="flex flex-col gap-2">
+      <nav className="mt-12 flex flex-col gap-2">
         {navItems.map((item) => (
           <button className={`flex items-center gap-3 rounded-lg px-3 py-2 text-left font-['Geist:Medium',sans-serif] text-[14px] ${item.active ? "bg-[#ebf8ff] text-[#2b6cb0]" : "text-[#1a1d20] hover:bg-[#f5f7f8]"}`} key={item.label} onClick={item.action} type="button">
             <Icon name={item.icon} />
@@ -53,7 +54,7 @@ function Sidebar() {
         <p className="mb-2 font-['Fragment_Mono:Regular',sans-serif] text-[11px] text-[#6c757d]">Connect</p>
         <a className="flex items-center gap-3 rounded-lg px-3 py-2 font-['Geist:Medium',sans-serif] text-[14px] text-[#1a1d20] hover:bg-[#f5f7f8]" href="mailto:blrizkyramadhan@yahoo.co.id"><Icon name="email" />Email</a>
         <a className="flex items-center gap-3 rounded-lg px-3 py-2 font-['Geist:Medium',sans-serif] text-[14px] text-[#1a1d20] hover:bg-[#f5f7f8]" href="https://www.linkedin.com/in/rizkyrong/" rel="noreferrer" target="_blank"><Icon name="linkedin" />LinkedIn</a>
-        <p className="mt-8 font-['Geist:Regular',sans-serif] text-[11px] text-[#6c757d]">© 2025 Rizky R. All rights reserved.</p>
+        <p className="mt-6 font-['Geist:Regular',sans-serif] text-[11px] text-[#6c757d]">© 2025 Rizky R. All rights reserved.</p>
       </div>
     </aside>
   );
@@ -65,11 +66,11 @@ export function CreationPage() {
     <div className="flex min-h-full bg-[#f8f9fa] text-[#1a1d20]">
       <Sidebar />
       <main className="min-w-0 flex-1 overflow-y-auto">
-        <header className="creation-page-header flex h-[80px] items-center justify-between border-b border-[#e9edf0] bg-white px-10">
-          <p className="font-['Geist:Regular',sans-serif] text-[14px] text-[#6c757d]">Browse our library of public utilities, active projects, and system configurations.</p>
-          <div className="flex items-center gap-2 rounded-full bg-[#f0fff4] px-3 py-1.5 font-['Geist:SemiBold',sans-serif] text-[12px] text-[#2f855a]"><span className="h-2 w-2 rounded-full bg-[#2f855a]" />Open for new opportunities</div>
+        <header className="creation-page-header flex items-center justify-between border-b border-[#e9edf0] bg-white px-20 py-6">
+          <p className="w-[600px] font-['Geist:Medium',sans-serif] text-[14px] leading-[22px] text-[#6c757d]">Crafting intuitive digital experiences through research-driven design.</p>
+          <div className="flex shrink-0 items-center gap-2 rounded-full bg-[#f0fff4] px-3 py-1.5 font-['Geist:SemiBold',sans-serif] text-[12px] text-[#2f855a]"><span className="h-2 w-2 rounded-full bg-[#2f855a]" />Open for new opportunities</div>
         </header>
-        <section className="creation-page-content mx-auto max-w-[1160px] px-10 py-11">
+        <section className="creation-page-content px-20 py-11">
           <div className="mb-8">
             <h1 className="font-['Geist:Bold',sans-serif] text-[34px] leading-[42px] tracking-[-0.03em]">Exploration Gallery</h1>
             <p className="mt-1 font-['Geist:Regular',sans-serif] text-[16px] text-[#6c757d]">Visuals made with care and experience.</p>
