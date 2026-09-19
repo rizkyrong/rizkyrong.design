@@ -4958,7 +4958,7 @@ function Frame13() {
                 </div>
               </div>
             </div>
-            <p className="[word-break:break-word] font-['Geist:Medium',sans-serif] font-medium leading-[22px] relative shrink-0 text-[#1a1d20] text-[14px] whitespace-nowrap">GitHub</p>
+            <p className="[word-break:break-word] font-['Geist:Medium',sans-serif] font-medium leading-[22px] relative shrink-0 text-[#1a1d20] text-[14px] whitespace-nowrap">LinkedIn</p>
           </div>
         </div>
       </div>
