@@ -1,7 +1,7 @@
-import imgScreenViewport from "./3455f93b8f5bf9365b748b04773198831456c09f.png";
-import imgScreenViewport1 from "./7c4e1a1952c3b503fde3b11445081da2daf959f1.png";
-import imgScreenViewport2 from "./cf4b51c642dbdd184e03178f3864b2d14f76add0.png";
-import imgLaptopScreen from "@/imports/CaseStudyLampu-1/9568d892d13658b7d8481f72e547aedc6757b384.png";
+import imgScreenViewport from "./3455f93b8f5bf9365b748b04773198831456c09f.webp";
+import imgScreenViewport1 from "./7c4e1a1952c3b503fde3b11445081da2daf959f1.webp";
+import imgScreenViewport2 from "./cf4b51c642dbdd184e03178f3864b2d14f76add0.webp";
+import imgLaptopScreen from "@/imports/CaseStudyLampu-1/9568d892d13658b7d8481f72e547aedc6757b384.webp";
 
 function Frame() {
   return (
@@ -256,7 +256,7 @@ function StepByStepIndicator() {
       <Frame />
       <Container />
       {/* MacBook mockup — fills the aspect-ratio container */}
-      <div className="aspect-[1822/1248] relative rounded-[38px] shrink-0 w-full overflow-hidden" data-name="videp processing order - lampu 1">
+      <div className="relative rounded-[38px] shrink-0 w-full overflow-hidden" data-name="videp processing order - lampu 1">
         <MacBookMockup />
       </div>
     </div>

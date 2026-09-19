@@ -6,7 +6,7 @@ import HomeDashboardMobileAsymmetricExpandMenu from "@/imports/HomeDashboardMobi
 
 const RESUME_URL = "https://drive.google.com/file/d/1aGfNx-FKfO6GQdFL_iyZla9ROm9oAT51/view";
 const EMAIL = "blrizkyramadhan@yahoo.co.id";
-const LINKEDIN_URL = "https://www.linkedin.com/in/rizkyrong/";
+const GITHUB_URL = "https://github.com/rizkyrong/rizkyrong.design";
 
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(() => window.innerWidth < 1024);
@@ -45,7 +45,7 @@ export function HomePage() {
         return;
       }
 
-      // Resume / Email / LinkedIn nav links (desktop sidebar + mobile bottom nav)
+      // Resume / Email / GitHub nav links (desktop sidebar + mobile bottom nav)
       const navLink = target.closest('[data-name="Nav Link"], [data-name="NavResume"]') as HTMLElement | null;
       if (navLink) {
         const text = navLink.querySelector("p")?.textContent?.trim() ?? "";
@@ -59,9 +59,9 @@ export function HomePage() {
           window.location.href = `mailto:${EMAIL}`;
           return;
         }
-        if (text === "LinkedIn") {
+        if (text === "GitHub") {
           e.preventDefault();
-          window.open(LINKEDIN_URL, "_blank", "noopener,noreferrer");
+          window.open(GITHUB_URL, "_blank", "noopener,noreferrer");
           return;
         }
       }

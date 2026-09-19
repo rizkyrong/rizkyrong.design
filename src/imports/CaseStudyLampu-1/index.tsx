@@ -1,37 +1,37 @@
 import svgPaths from "./svg-dkjykb8dfb";
-import imgBrilliantFacetedCrystalGemstone1 from "./323978cca3f94f43fbb268bf32ea431cdfcaf04c.png";
+import imgBrilliantFacetedCrystalGemstone1 from "./323978cca3f94f43fbb268bf32ea431cdfcaf04c.webp";
 import imgShadow from "./4f6103cc1e4bca3b94c8bbc35c4636de79f99309.png";
-import imgMain from "./d779780fc05b63d75547ad32d5e97b11dc3851b3.png";
-import imgMacBookProMockup16InchSilverRightLabel from "./b41a665e314290971f18b33354ce83f9c6197996.png";
-import imgKeyInsightLampu202411 from "./913b3d3896e6748b592ff0ef364cb7cb3458ee25.png";
-import imgPersona11 from "./4394ce351e517ab75088dd67f417e418968b0b9b.png";
-import imgPersona1 from "./042abe7ecfc6411e94d701a68b8a9eb8e2ea95a2.png";
-import imgIALampuMarketplace1 from "./02e4591b586265aeb131bda161f02f45c16081a2.png";
+import imgMain from "./d779780fc05b63d75547ad32d5e97b11dc3851b3.webp";
+import imgMacBookProMockup16InchSilverRightLabel from "./b41a665e314290971f18b33354ce83f9c6197996.webp";
+import imgKeyInsightLampu202411 from "./913b3d3896e6748b592ff0ef364cb7cb3458ee25.webp";
+import imgPersona11 from "./4394ce351e517ab75088dd67f417e418968b0b9b.webp";
+import imgPersona1 from "./042abe7ecfc6411e94d701a68b8a9eb8e2ea95a2.webp";
+import imgIALampuMarketplace1 from "./02e4591b586265aeb131bda161f02f45c16081a2.webp";
 import imgFlowNormalLampu1 from "./22c1386a6dffed24b76173373d816fb8eb498ff1.png";
-import imgTypographyUnifiedTable1 from "./e545a5f4a9e45d6bea6cb5c559e4883ff10c4da5.png";
+import imgTypographyUnifiedTable1 from "./e545a5f4a9e45d6bea6cb5c559e4883ff10c4da5.webp";
 import imgTypographyUnifiedTable2 from "./5a540255e2f62b7fbee591a3cd6aa0eae88a4fa3.png";
-import imgTypographyUnifiedTable3 from "./c1d35044d26dcf8fe1fe8ad222cb74a77de2e92b.png";
-import imgDesignSystemLAmpu1 from "./be16f470c72da2156bf0687b7837e7b5da60661a.png";
-import imgHomeLampu20241 from "./9568d892d13658b7d8481f72e547aedc6757b384.png";
-import imgScreenViewport from "./0b3a3f554baa3aa7d1c18a9eeb6ac31398163694.png";
-import imgScreenViewport1 from "./c0e0c9fa8ae162abf9ade19a4674701c6d998c9f.png";
-import imgScreenViewport2 from "./0a15acead9f1a8e58de31ac9be72bc383ea034d9.png";
-import imgScreenViewport3 from "./b9c8c06ee7f61befeaa8544433c0294c23eb5961.png";
-import imgScreenViewport4 from "./3455f93b8f5bf9365b748b04773198831456c09f.png";
-import imgScreenViewport5 from "./7c4e1a1952c3b503fde3b11445081da2daf959f1.png";
-import imgScreenViewport6 from "./cf4b51c642dbdd184e03178f3864b2d14f76add0.png";
-import imgScreenViewport7 from "./ea3c96f9deb1b8989115bed45e46a3944fc892cd.png";
-import imgScreenViewport8 from "./7ad271586d1005f042b15f7839a489871e07f8c0.png";
-import imgScreenViewport9 from "./e8c971a0b5e1916e9d6e70d0c7c5c07f48269a94.png";
-import imgMyOrderDetailOrder from "./b250fa30f9cee1b3cfa8e13ecc63ed24fb66524c.png";
-import imgMyOrderHowToPay from "./09a1af52445f19559bb9fd1e8158a86e19bf1128.png";
-import imgScreenViewport10 from "./a06769720377c2280ae2129d4f87a1c573f0827d.png";
-import imgScreenViewport11 from "./2248ac84dbd93346da04afa8b0793bc91af98778.png";
-import imgScreenViewport12 from "./a9de189352b9e2bf75426503476cd6c0ae5b7c83.png";
-import imgCheckoutScreenshot1 from "./4c58d8a0c5bfbce03cc044c7e47fe7104fbf55a1.png";
-import imgCheckoutScreenshot2 from "./1670633027a4650904a558b6ee73a841275d83de.png";
-import imgCheckoutScreenshot3 from "./b084e656a98fbf5098753ecd4091f1321d234211.png";
-import imgCheckoutScreenshot4 from "./5516c9dec28748278057ef99d2918f9393b738b0.png";
+import imgTypographyUnifiedTable3 from "./c1d35044d26dcf8fe1fe8ad222cb74a77de2e92b.webp";
+import imgDesignSystemLAmpu1 from "./be16f470c72da2156bf0687b7837e7b5da60661a.webp";
+import imgHomeLampu20241 from "./9568d892d13658b7d8481f72e547aedc6757b384.webp";
+import imgScreenViewport from "./0b3a3f554baa3aa7d1c18a9eeb6ac31398163694.webp";
+import imgScreenViewport1 from "./c0e0c9fa8ae162abf9ade19a4674701c6d998c9f.webp";
+import imgScreenViewport2 from "./0a15acead9f1a8e58de31ac9be72bc383ea034d9.webp";
+import imgScreenViewport3 from "./b9c8c06ee7f61befeaa8544433c0294c23eb5961.webp";
+import imgScreenViewport4 from "./3455f93b8f5bf9365b748b04773198831456c09f.webp";
+import imgScreenViewport5 from "./7c4e1a1952c3b503fde3b11445081da2daf959f1.webp";
+import imgScreenViewport6 from "./cf4b51c642dbdd184e03178f3864b2d14f76add0.webp";
+import imgScreenViewport7 from "./ea3c96f9deb1b8989115bed45e46a3944fc892cd.webp";
+import imgScreenViewport8 from "./7ad271586d1005f042b15f7839a489871e07f8c0.webp";
+import imgScreenViewport9 from "./e8c971a0b5e1916e9d6e70d0c7c5c07f48269a94.webp";
+import imgMyOrderDetailOrder from "./b250fa30f9cee1b3cfa8e13ecc63ed24fb66524c.webp";
+import imgMyOrderHowToPay from "./09a1af52445f19559bb9fd1e8158a86e19bf1128.webp";
+import imgScreenViewport10 from "./a06769720377c2280ae2129d4f87a1c573f0827d.webp";
+import imgScreenViewport11 from "./2248ac84dbd93346da04afa8b0793bc91af98778.webp";
+import imgScreenViewport12 from "./a9de189352b9e2bf75426503476cd6c0ae5b7c83.webp";
+import imgCheckoutScreenshot1 from "./4c58d8a0c5bfbce03cc044c7e47fe7104fbf55a1.webp";
+import imgCheckoutScreenshot2 from "./1670633027a4650904a558b6ee73a841275d83de.webp";
+import imgCheckoutScreenshot3 from "./b084e656a98fbf5098753ecd4091f1321d234211.webp";
+import imgCheckoutScreenshot4 from "./5516c9dec28748278057ef99d2918f9393b738b0.webp";
 
 function ArrowBack({ className }: { className?: string }) {
   return (
@@ -2358,7 +2358,7 @@ function StepByStepIndicator() {
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full" data-name="Step by Step Indicator">
       <Frame90 />
       <Container2 />
-      <div className="aspect-[1822/1248] relative rounded-[38px] shrink-0 w-full" data-name="videp processing order - lampu 1">
+      <div className="relative rounded-[38px] shrink-0 w-full" data-name="videp processing order - lampu 1">
         <div className="absolute inset-0 overflow-hidden rounded-[38px]" />
       </div>
     </div>
@@ -2758,7 +2758,7 @@ function MyProductSection() {
   return (
     <div className="bg-black content-stretch flex flex-col gap-[24px] items-start p-[80px] relative shrink-0 w-full" data-name="my-product-section">
       <MyProductHeader />
-      <div className="aspect-[1822/1248] relative rounded-[38px] shrink-0 w-full" data-name="videp my product - lampu 1">
+      <div className="relative rounded-[38px] shrink-0 w-full" data-name="videp my product - lampu 1">
         <div className="absolute inset-0 overflow-hidden rounded-[38px]" />
       </div>
     </div>

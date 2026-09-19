@@ -1,4 +1,4 @@
-import gifCheckout from "@/imports/Checkout___Payment/video_processing_order_-_lampu_1.gif";
+import gifCheckout from "@/imports/Checkout___Payment/video_processing_order_-_lampu_1.mp4";
 
 function Frame() {
   return (
@@ -17,10 +17,13 @@ function PhoneCard() {
         <div aria-hidden className="absolute border-[#111214] border-[2px] border-solid inset-0 pointer-events-none rounded-[32px]" />
         <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-[60px] h-[6px] bg-[#050607] rounded-full" />
         <div className="mt-[28px] mx-[8px] mb-[8px] flex-1 w-[calc(100%-16px)] rounded-[24px] overflow-hidden bg-white">
-          <img
-            alt="Checkout flow"
+          <video
             className="w-full h-full object-cover object-top"
             src={gifCheckout}
+            autoPlay
+            loop
+            muted
+            playsInline
           />
         </div>
         <div className="mb-[10px] w-[40px] h-[4px] bg-[#3a3f44] rounded-full" />
@@ -53,10 +56,13 @@ function MacBookMockup() {
         </div>
         <div className="relative flex-1 w-full px-[10px] pb-[10px] overflow-hidden">
           <div className="rounded-[6px] overflow-hidden size-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.15)]">
-            <img
-              alt="Lampu marketplace checkout flow"
+            <video
               className="w-full h-full object-cover object-top"
               src={gifCheckout}
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </div>
         </div>
@@ -82,7 +88,7 @@ function StepByStepIndicator() {
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full" data-name="Step by Step Indicator">
       <Frame />
       <Container />
-      <div className="aspect-[1822/1248] relative rounded-[38px] shrink-0 w-full overflow-hidden" data-name="videp processing order - lampu 1">
+      <div className="relative rounded-[38px] shrink-0 w-full overflow-hidden" data-name="videp processing order - lampu 1">
         <MacBookMockup />
       </div>
     </div>

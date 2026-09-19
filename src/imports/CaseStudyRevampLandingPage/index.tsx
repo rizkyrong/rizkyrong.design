@@ -1,12 +1,12 @@
 import svgPaths from "./svg-r6r32dxp80";
-import imgBrilliantFacetedCrystalGemstone1 from "./323978cca3f94f43fbb268bf32ea431cdfcaf04c.png";
+import imgBrilliantFacetedCrystalGemstone1 from "./323978cca3f94f43fbb268bf32ea431cdfcaf04c.webp";
 import imgRectangle from "./e6ccc4ffa307d04ac034a7d285461822ae2718e8.png";
-import imgZenBookDuo14 from "./b24cf0e52dfeb664e01db4f655ea47c0f4008134.png";
+import imgZenBookDuo14 from "./b24cf0e52dfeb664e01db4f655ea47c0f4008134.webp";
 import imgChangeThis from "./284345d0d605352e111fb9556f57382547e79ecb.png";
-import imgChangeThis1 from "./e3508bb7c74d73ee46e830c3e9632770964fea3d.png";
-import imgHomeLampu20241 from "./9568d892d13658b7d8481f72e547aedc6757b384.png";
-import imgHomeLampu20242 from "./d870a0e85838579b5e9cad5bece980580a35efba.png";
-import imgScreenViewport from "./c63084214375c39243a21fb16e548a9c8eed0b15.png";
+import imgChangeThis1 from "./e3508bb7c74d73ee46e830c3e9632770964fea3d.webp";
+import imgHomeLampu20241 from "./9568d892d13658b7d8481f72e547aedc6757b384.webp";
+import imgHomeLampu20242 from "./d870a0e85838579b5e9cad5bece980580a35efba.webp";
+import imgScreenViewport from "./c63084214375c39243a21fb16e548a9c8eed0b15.webp";
 import imgSpeaker from "./7270885d95df0152f37fd77d56d1350c13f17579.png";
 
 function ArrowBack({ className }: { className?: string }) {

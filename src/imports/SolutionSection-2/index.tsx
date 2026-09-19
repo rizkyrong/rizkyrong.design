@@ -1,6 +1,6 @@
-import imgScreenViewport from "./3455f93b8f5bf9365b748b04773198831456c09f.png";
-import imgScreenViewport1 from "./7c4e1a1952c3b503fde3b11445081da2daf959f1.png";
-import imgScreenViewport2 from "./cf4b51c642dbdd184e03178f3864b2d14f76add0.png";
+import imgScreenViewport from "./3455f93b8f5bf9365b748b04773198831456c09f.webp";
+import imgScreenViewport1 from "./7c4e1a1952c3b503fde3b11445081da2daf959f1.webp";
+import imgScreenViewport2 from "./cf4b51c642dbdd184e03178f3864b2d14f76add0.webp";
 
 function Frame() {
   return (
@@ -206,7 +206,7 @@ function StepByStepIndicator() {
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full" data-name="Step by Step Indicator">
       <Frame />
       <Container />
-      <div className="aspect-[1822/1248] relative rounded-[38px] shrink-0 w-full" data-name="videp processing order - lampu 1">
+      <div className="relative rounded-[38px] shrink-0 w-full" data-name="videp processing order - lampu 1">
         <div className="absolute inset-0 overflow-hidden rounded-[38px]" />
       </div>
     </div>

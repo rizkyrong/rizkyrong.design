@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
 import CaseStudyRevampLandingPage from "@/imports/CaseStudyRevampLandingPage/index";
-import guideMenuHomeGif from "@/imports/Explore_Product_Categories/guide menu home.gif";
-import videoFiturLampuGif from "@/imports/Find_the_Right_Business_Solutions/video-fitur-lampu.gif";
-import homeMobile1Gif from "@/imports/Meeting_buyers_where_they_browse/home mobile 1.gif";
-import homeMobil2Gif from "@/imports/Meeting_buyers_where_they_browse/home mobil 2.gif";
-import homeMobil3Gif from "@/imports/Meeting_buyers_where_they_browse/home mobil 3.gif";
+import guideMenuHomeGif from "@/imports/Explore_Product_Categories/guide menu home.mp4";
+import videoFiturLampuGif from "@/imports/Find_the_Right_Business_Solutions/video-fitur-lampu.mp4";
+import homeMobile1Gif from "@/imports/Meeting_buyers_where_they_browse/home mobile 1.mp4";
+import homeMobil2Gif from "@/imports/Meeting_buyers_where_they_browse/home mobil 2.mp4";
+import homeMobil3Gif from "@/imports/Meeting_buyers_where_they_browse/home mobil 3.mp4";
 
 // Maps sidebar nav link text → the section-label paragraph text inside the page
 const NAV_TO_LABEL: Record<string, string> = {
@@ -62,30 +62,42 @@ export function CaseStudyRevampPage() {
     const scrollContainer = document.querySelector<HTMLElement>('[data-name="main-container"]');
     if (!scrollContainer) return;
 
-    // ── Inject GIF into Explore Product Categories container ─────────────
+    // Helper: build an autoplaying, looping, muted inline video (replaces old <img> GIFs)
+    function createVideo(src: string, cssText: string) {
+      const video = document.createElement("video");
+      video.src = src;
+      video.autoplay = true;
+      video.loop = true;
+      video.muted = true;
+      video.playsInline = true;
+      video.style.cssText = cssText;
+      return video;
+    }
+
+    // ── Inject video into Explore Product Categories container ───────────
     const guideMenuHome = scrollContainer.querySelector<HTMLElement>('[data-name="guide menu home"]');
-    if (guideMenuHome && !guideMenuHome.querySelector("img")) {
+    if (guideMenuHome && !guideMenuHome.querySelector("video")) {
       const innerContainer = guideMenuHome.querySelector("div");
       if (innerContainer) {
-        const img = document.createElement("img");
-        img.src = guideMenuHomeGif;
-        img.alt = "Explore product categories guide";
-        img.style.cssText = "width:100%;height:100%;object-fit:cover;border-radius:17.569px;display:block;";
-        innerContainer.appendChild(img);
+        const video = createVideo(
+          guideMenuHomeGif,
+          "width:100%;height:100%;object-fit:cover;border-radius:17.569px;display:block;",
+        );
+        innerContainer.appendChild(video);
       }
     }
 
-    // ── Inject GIF into Find the Right Business Solutions container ──────
+    // ── Inject video into Find the Right Business Solutions container ────
     scrollContainer.querySelectorAll<HTMLElement>('[data-name="video-fitur-lampu"]').forEach((el) => {
-      if (el.querySelector("img")) return;
-      const img = document.createElement("img");
-      img.src = videoFiturLampuGif;
-      img.alt = "Find the right business solutions feature video";
-      img.style.cssText = "width:100%;height:100%;object-fit:cover;border-radius:9.275px;display:block;";
-      el.appendChild(img);
+      if (el.querySelector("video")) return;
+      const video = createVideo(
+        videoFiturLampuGif,
+        "width:100%;height:100%;object-fit:cover;border-radius:9.275px;display:block;",
+      );
+      el.appendChild(video);
     });
 
-    // ── Inject GIFs into Meeting buyers where they browse phone mockups ──
+    // ── Inject videos into Meeting buyers where they browse phone mockups ─
     const productSections = scrollContainer.querySelectorAll<HTMLElement>('[data-name="my-product-section"]');
     const meetingSection = productSections[productSections.length - 1] ?? null;
     if (meetingSection) {
@@ -93,12 +105,12 @@ export function CaseStudyRevampPage() {
       const gifs = [homeMobile1Gif, homeMobil2Gif, homeMobil3Gif];
       screens.forEach((screen, i) => {
         const inner = screen.querySelector<HTMLElement>("div.absolute.inset-0");
-        if (!inner || inner.querySelector("img")) return;
-        const img = document.createElement("img");
-        img.src = gifs[i] ?? gifs[0];
-        img.alt = `Mobile screen ${i + 1}`;
-        img.style.cssText = "width:100%;height:100%;object-fit:cover;border-radius:23.963px;display:block;";
-        inner.appendChild(img);
+        if (!inner || inner.querySelector("video")) return;
+        const video = createVideo(
+          gifs[i] ?? gifs[0],
+          "width:100%;height:100%;object-fit:cover;border-radius:23.963px;display:block;",
+        );
+        inner.appendChild(video);
       });
     }
 

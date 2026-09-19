@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router";
 import { useEffect, lazy, Suspense } from "react";
-import gifCheckout from "@/imports/Checkout___Payment/video_processing_order_-_lampu_1.gif";
-import gifMyProduct from "@/imports/My_Product/video my product - lampu 1.gif";
-import imgLampuHome from "@/imports/CaseStudyLampu-1/9568d892d13658b7d8481f72e547aedc6757b384.png";
+import gifCheckout from "@/imports/Checkout___Payment/video_processing_order_-_lampu_1.mp4";
+import gifMyProduct from "@/imports/My_Product/video my product - lampu 1.mp4";
+import imgLampuHome from "@/imports/CaseStudyLampu-1/9568d892d13658b7d8481f72e547aedc6757b384.webp";
 
 const CaseStudyLampuV2Import = lazy(() => import("@/imports/CaseStudyLampu-1/index"));
 
@@ -91,9 +91,9 @@ function CaseStudyLampuV2Wired() {
 
     // ── Inject GIF into My Product placeholder ────────────────────────
     scrollContainer.querySelectorAll<HTMLElement>('[data-name="videp my product - lampu 1"]').forEach((placeholder) => {
-      if (placeholder.querySelector("img")) return;
+      if (placeholder.querySelector("video")) return;
       placeholder.style.cssText += "overflow:hidden;border-radius:38px;";
-      placeholder.innerHTML = `<img src="${gifMyProduct}" alt="My Product flow" style="width:100%;height:100%;object-fit:cover;display:block;" />`;
+      placeholder.innerHTML = `<video src="${gifMyProduct}" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>`;
     });
 
     // ── Inject arrows into Order Processing flow chart ─────────────────
@@ -137,7 +137,7 @@ function CaseStudyLampuV2Wired() {
 
       placeholder.classList.add("laptop-mockup-injected");
       placeholder.style.cssText += "overflow:hidden;border-radius:38px;";
-      placeholder.innerHTML = `<img src="${gifCheckout}" alt="Checkout flow" style="width:100%;height:100%;object-fit:cover;display:block;" />`;
+      placeholder.innerHTML = `<video src="${gifCheckout}" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>`;
     });
 
 

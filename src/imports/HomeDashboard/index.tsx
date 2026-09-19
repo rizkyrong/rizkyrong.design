@@ -1,11 +1,11 @@
 import svgPaths from "./svg-x554z7zf9f";
-import imgBrilliantFacetedCrystalGemstone1 from "./323978cca3f94f43fbb268bf32ea431cdfcaf04c.png";
-import imgSection from "./5531a77bb9646ddbb7c2ae79e4c20d68dbb8117c.png";
-import imgSection1 from "./652471cdb613e792a946a14fe6559a7335520d82.png";
+import imgBrilliantFacetedCrystalGemstone1 from "./323978cca3f94f43fbb268bf32ea431cdfcaf04c.webp";
+import imgSection from "./5531a77bb9646ddbb7c2ae79e4c20d68dbb8117c.webp";
+import imgSection1 from "./652471cdb613e792a946a14fe6559a7335520d82.webp";
 import imgStarlinkLogoSvg2 from "./f582b6436ba4c4a20d040077c902c5f79822605b.png";
 import imgIndosatOoredooHutchisonLogo5B039B2209Seeklogo1 from "./de7eb526b809a91565522e02f038da4d5aca714b.png";
 import imgS5GcDe4KDf5Uhr3CH7Bx1 from "./657ef5609e45c076ed784188359fde8fcbec9a9d.png";
-import imgCardImage from "./bda0b4c9bfdc92c3c7306106cc49fa74bcee6aa9.png";
+import imgCardImage from "./bda0b4c9bfdc92c3c7306106cc49fa74bcee6aa9.webp";
 import imgBannerImage from "./d98a3f7c2a236e52d6bb758e01dc687a96b0be63.png";
 import imgBannerImage1 from "./31aeb1a68aa9cbd26a806a6e21d5dc2ddd3f685c.png";
 import imgSpaceXLogoBlackSvg12 from "./1ec7963386467396eebfa5f30781a06129fbaec6.png";
@@ -285,7 +285,7 @@ function Frame6() {
                 </div>
               </div>
             </div>
-            <p className="[word-break:break-word] font-['Geist:Medium',sans-serif] font-medium leading-[22px] relative shrink-0 text-[#1a1d20] text-[14px] whitespace-nowrap">LinkedIn</p>
+            <p className="[word-break:break-word] font-['Geist:Medium',sans-serif] font-medium leading-[22px] relative shrink-0 text-[#1a1d20] text-[14px] whitespace-nowrap">GitHub</p>
           </div>
         </div>
       </div>

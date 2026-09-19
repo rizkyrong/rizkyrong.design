@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import { useEffect, lazy, Suspense } from "react";
-import imgLaptopScreen from "@/imports/CaseStudyLampu/9568d892d13658b7d8481f72e547aedc6757b384.png";
+import imgLaptopScreen from "@/imports/CaseStudyLampu/9568d892d13658b7d8481f72e547aedc6757b384.webp";
 
 const CaseStudyLampuImport = lazy(() => import("@/imports/CaseStudyLampu/index"));
 
