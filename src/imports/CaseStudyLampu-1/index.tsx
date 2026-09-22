@@ -2698,7 +2698,7 @@ function Frame110() {
     <div className="bg-white content-stretch flex flex-[1_0_50px] flex-col gap-[20px] items-start min-w-px p-[24px] relative rounded-[16px]" data-name="Frame">
       <div aria-hidden className="absolute border border-[#e9edf0] border-solid inset-0 pointer-events-none rounded-[16px]" />
       <Frame111 />
-      <p className="[word-break:break-word] font-['Geist:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#6c757d] text-[14px] w-[min-content]">Users are presented with a virtual account number and a list of supported banks, BCA ATM, BCA Mobile, Internet Banking, so they can complete payment through their preferred channel without contacting support.</p>
+      <p className="[word-break:break-word] font-['Geist:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#6c757d] text-[14px] w-[min-content]">Users are presented with a virtual account number and a list of supported banks, ATM, Mobile Banking, Internet Banking, so they can complete payment through their preferred channel without contacting support.</p>
       <div className="aspect-[400/300] relative rounded-[8px] shrink-0 w-full" data-name="My Order - How to Pay">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
           <img alt="" className="absolute h-[140.19%] left-[-0.08%] max-w-none top-[-0.04%] w-full" src={imgMyOrderHowToPay} />
