@@ -2622,7 +2622,7 @@ function Frame101() {
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start min-w-px relative" data-name="Frame">
       <Frame102 />
       <IpadProChassis9 />
-      <p className="[word-break:break-word] font-['Geist:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#6c757d] text-[14px] w-[min-content]">Confirmed paid orders display a success status with the option to contact the seller or review order details — building trust and reducing support needs.</p>
+      <p className="[word-break:break-word] font-['Geist:Regular',sans-serif] font-normal leading-[22px] min-w-full relative shrink-0 text-[#6c757d] text-[14px] w-[min-content]">Confirmed paid orders display a success status with the option to contact the seller or review order details, building trust and reducing support needs.</p>
     </div>
   );
 }
